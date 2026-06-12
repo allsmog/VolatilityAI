@@ -2,7 +2,22 @@
 
 **AI-Powered Memory Forensics Companion for Volatility3**
 
-VolatilityAI combines [Volatility3](https://github.com/volatilityfoundation/volatility3) memory forensics with LLMs to automate triage analysis and enable interactive investigation of memory dumps. Unlike a plain LLM wrapper, VolAI validates LLM output against real evidence, runs deterministic detection rules, and persists sessions for comparison over time.
+VolatilityAI combines [Volatility3](https://github.com/volatilityfoundation/volatility3)
+memory forensics with deterministic DFIR rules and grounded LLM analysis.
+It automates triage, validates findings against real plugin evidence, and
+keeps investigation sessions available for timelines, diffs, and follow-up.
+
+![VolatilityAI social preview](docs/social-preview.png)
+
+## At a glance
+
+| Area | Details |
+| --- | --- |
+| Core workflow | Analyze memory dumps, validate findings, chat with forensic context |
+| Evidence model | Grounded process, network, path, plugin, and MITRE references |
+| Deterministic layer | Behavioral rules for suspicious processes, C2 indicators, malfind hits, hidden processes, and more |
+| Outputs | JSON reports, timelines, report diffs, SQLite-backed sessions |
+| Providers | Claude, OpenAI, local models, and OpenAI-compatible endpoints |
 
 ## Features
 
